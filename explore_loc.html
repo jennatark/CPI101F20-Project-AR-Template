@@ -25,35 +25,52 @@
         <!-- Fill in the content BELOW this line -->
 
         <div id="nft-marker1-info" class="info-pane" >
-          <script type="text/javascript">
-var randRep;
-function randExer() {
-  var listExercise = ["Push-Ups" , "Sit-Ups", "Jumping Jacks", " A Plank", " A Side Plank", "V-Ups", "Burpees", "Lunges",
-                    "Side Lunges", "High Knees", "Donkey Kicks", "Inchworms", "Tuck Jumps","Mountain Climbers", "A Wall Sit",
-                    "Calf Raise", "Supermans", "Arm Circles", "Russian Twist", "Bicycles", "Crunches", "Downward Dog",
-                    "Single Leg Dead Lifts", "Sprints", "Pump Squats"];
-  var repsNums = ["10","15","20","25","30","35","40","45","50","55","60","65","70","75","80","85","90"];
-  var randInt = Math.floor(Math.random() * 25);
-  randRep = Math.floor(Math.random() * 17);
-  var result = "Do " + listExercise[randInt] + " for " + repsNums[randRep] + " seconds";
-  document.getElementById("result").innerHTML = result;
-  document.getElementById("countdown").innerHTML = repsNums[randRep];
-}
-</script>
+        <script type="text/javascript">
+        var randRep;
+        function randExer() {
+          var listExercise = ["Push-Ups" , "Sit-Ups", "Jumping Jacks", " A Plank", " A Side Plank", "V-Ups", "Burpees", "Lunges",
+                            "Side Lunges", "High Knees", "Donkey Kicks", "Inchworms", "Tuck Jumps","Mountain Climbers", "A Wall Sit",
+                            "Calf Raise", "Supermans", "Arm Circles", "Russian Twist", "Bicycles", "Crunches", "Downward Dog",
+                            "Single Leg Dead Lifts", "Sprints", "Pump Squats"];
+          var repsNums = ["10","15","20","25","30","35","40","45","50","55","60","65","70","75","80","85","90"];
+          var randInt = Math.floor(Math.random() * 25);
+          randRep = Math.floor(Math.random() * 17);
+          var result = "Do " + listExercise[randInt] + " for " + repsNums[randRep] + " seconds";
+          document.getElementById("result").innerHTML = result;
+          document.getElementById("countdown").innerHTML = repsNums[randRep];
+        }
+        </script>
+                  <input type = "button" class="button button1" value="Get Exercise!" onclick="randExer()">
+        <!--<h3 id="prompt"> Excercise = <div id="result"> </div> <h3> -->
+                  <h1 id="first"> <div id="result"></div> Next Location : Hayden Library </h1>
+
+                </div>
+                <div id="nft-marker2-info" class="info-pane">
+
+
           <input type = "button" class="button button1" value="Get Exercise!" onclick="randExer()">
-<!--<h3 id="prompt"> Excercise = <div id="result"> </div> <h3> -->
-          <h1 id="first"> <div id="result"></div> Next Location : Hayden Library </h1>
-
-        </div>
-        <div id="nft-marker2-info" class="info-pane">
-
-
-<input type = "button" class="button button1" value="Get Exercise!" onclick="randExer()">
   <!--<h3 id="prompt"> Excercise = <div id="result"> </div> <h3> -->
-            <h1 id="first"> <div id="result"></div> Next Location : Hayden Library </h1>
+            <h1 id="first"> <div id="result"></div> Next Location : ASU Gammage </h1>
         </div>
+
+
         <div id="nft-marker3-info" class="info-pane">
-            <h1 onload = "randExer()"> <div id="result"></div> Next Location : Old Main</h1>
+          <script type="text/javascript">
+          var randRep;
+          function randExer() {
+            var listExercise = ["Push-Ups" , "Sit-Ups", "Jumping Jacks", " A Plank", " A Side Plank", "V-Ups", "Burpees", "Lunges",
+                              "Side Lunges", "High Knees", "Donkey Kicks", "Inchworms", "Tuck Jumps","Mountain Climbers", "A Wall Sit",
+                              "Calf Raise", "Supermans", "Arm Circles", "Russian Twist", "Bicycles", "Crunches", "Downward Dog",
+                              "Single Leg Dead Lifts", "Sprints", "Pump Squats"];
+            var repsNums = ["10","15","20","25","30","35","40","45","50","55","60","65","70","75","80","85","90"];
+            var randInt = Math.floor(Math.random() * 25);
+            randRep = Math.floor(Math.random() * 17);
+            var result = "Do " + listExercise[randInt] + " for " + repsNums[randRep] + " seconds";
+            document.getElementById("result").innerHTML = result;
+            document.getElementById("countdown").innerHTML = repsNums[randRep];
+            document.write(result);
+          }
+          </script>
         </div>
 
         <!-- Fill in the content ABOVE this line -->
