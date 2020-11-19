@@ -29,5 +29,4 @@ function randMotiv() {
   var randomNum = Math.floor(Math.random() * 15);
   var quote = motivations[randomNum];
   document.getElementById("motivational").innerHTML = quote;
-
 }
